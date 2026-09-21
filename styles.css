@@ -1,0 +1,212 @@
+@import url("bootstrap/icons/bootstrap-icons.css");
+
+
+body {
+    background-color: #fff8f3;
+    color: #3d3d3d;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+
+
+.container {
+    max-width: 900px;
+}
+
+
+
+
+h1 {
+    color: #e66f51;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.container > p {
+    color: #6b625e;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-left: 5px solid #e66f51;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(80, 50, 40, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(80, 50, 40, 0.12);
+}
+
+
+.card-body {
+    padding: 25px 28px;
+}
+
+
+
+.card-title {
+    color: #e66f51;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.card-text {
+    color: #625d5a;
+    line-height: 1.6;
+}
+
+
+
+code {
+    color: #d85f43;
+    background-color: #fff0e9;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+strong {
+    color: #45403e;
+}
+
+
+
+
+.form-control {
+    background-color: #fffdfb;
+    border: 1px solid #e4d8d2;
+    border-radius: 9px;
+    padding: 11px 14px;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #e66f51;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(230, 111, 81, 0.15);
+
+    outline: none;
+}
+
+
+.form-control::placeholder {
+    color: #aaa09b;
+}
+
+
+.alert {
+    border: none;
+    border-radius: 9px;
+    font-size: 0.95rem;
+}
+
+
+/* Esperando texto */
+.alert-secondary {
+    background-color: #f5f1ee;
+    color: #716964;
+}
+
+
+
+.alert-success {
+    background-color: #e8f3e4;
+    color: #527249;
+    border-left: 4px solid #8bb07d;
+}
+
+
+
+.alert-danger {
+    background-color: #fce9e4;
+    color: #b34f38;
+    border-left: 4px solid #e66f51;
+}
+
+
+
+mark {
+    background-color: #e9c46b;
+    color: #3d3d3d;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+
+
+.btn-primary {
+    background-color: #e66f51;
+    border-color: #e66f51;
+    border-radius: 9px;
+
+    font-weight: 600;
+    padding: 10px 25px;
+
+    box-shadow: 0 3px 8px rgba(230, 111, 81, 0.2);
+
+    transition: all 0.2s ease;
+}
+
+
+.btn-primary:hover {
+    background-color: #d95f42;
+    border-color: #d95f42;
+    transform: translateY(-1px);
+}
+
+
+.btn-primary:active {
+    background-color: #c95439 !important;
+    border-color: #c95439 !important;
+    transform: translateY(0);
+}
+
+
+/* Botón limpiar */
+.btn-secondary {
+    background-color: #8bb07d;
+    border-color: #8bb07d;
+    border-radius: 9px;
+
+    font-weight: 600;
+    padding: 10px 25px;
+
+    transition: all 0.2s ease;
+}
+
+
+.btn-secondary:hover {
+    background-color: #789d6b;
+    border-color: #789d6b;
+}
+
+
+
+footer {
+    border-top: 1px solid #eaded8;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+}
+

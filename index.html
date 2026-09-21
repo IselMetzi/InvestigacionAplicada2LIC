@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>Investigación aplicada</title>
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <h1 class="text-center mb-5">Expresiones regulares en JavaScript</h1>
+        <p class="text-center">Bienvenido a este ejemplo de las expresiones regulares en Java ¡Puedes llenar
+            este pequeño formulario y descrubir su funcionamiento!
+        </p>
+
+        <!-- Teléfono -->
+        <div class="card mb-4 shadow-sm"
+             data-pattern="^(\+503\s?)?[267]\d{3}-?\d{4}$"
+             data-flags="">
+
+            <div class="card-body">
+
+                <h3 class="card-title">Teléfono</h3>
+
+                <p class="card-text">
+                    Por favor ingrese su número de telefono (El Salvador).<br>
+                    Acepta con o sin +503 y con o sin guion.
+                    Móviles inician en 6 o 7, fijos en 2.
+                </p>
+
+                <p>
+                    <strong>Patrón:</strong>
+                    <code>/^(\+503\s?)?[267]\d{3}-?\d{4}$/</code>
+                </p>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ej. +503 7123-4567"
+                    autocomplete="off">
+
+                <div class="mt-3 alert alert-secondary">
+                    Esperando texto...
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- DUI -->
+        <div class="card mb-4 shadow-sm"
+             data-pattern="^\d{8}-\d$"
+             data-flags="">
+
+            <div class="card-body">
+
+                <h3 class="card-title">DUI</h3>
+
+                <p class="card-text">
+                    Por favor ingrese su DUI.<br>
+                    Ocho dígitos, un guion, un dígito.
+                </p>
+
+                <p>
+                    <strong>Patrón:</strong>
+                    <code>/^\d{8}-\d$/</code>
+                </p>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ej. 04567891-2"
+                    autocomplete="off">
+
+                <div class="mt-3 alert alert-secondary">
+                    Esperando texto...
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Correo -->
+        <div class="card mb-4 shadow-sm"
+             data-pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+             data-flags="">
+
+            <div class="card-body">
+
+                <h3 class="card-title">Correo electrónico</h3>
+
+                <p class="card-text">
+                    Por favor ingrese su correo electrónico.<br>
+                    Usuario, arroba, dominio con al menos un punto y 
+                    una extensión de dos o más letras.
+                </p>
+
+                <p>
+                    <strong>Patrón:</strong>
+                    <code>/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/</code>
+                </p>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ej. nombre@mail.com"
+                    autocomplete="off">
+
+                <div class="mt-3 alert alert-secondary">
+                    Esperando texto...
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="card mb-4 shadow-sm"
+             data-pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+             data-flags="">
+
+            <div class="card-body">
+
+                <h3 class="card-title">Contraseña segura</h3>
+
+                <p class="card-text">
+                    Por favor ingrese una contraseña.<br>
+                    Mínimo 8 caracteres, con al menos una minúscula,
+                    una mayúscula y un número. Los lookaheads
+                    <code>(?=...)</code> verifican cada condición sin consumir texto.
+                </p>
+
+                <p>
+                    <strong>Patrón:</strong>
+                    <code>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/</code>
+                </p>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ej. Contra2026"
+                    autocomplete="off">
+
+                <div class="mt-3 alert alert-secondary">
+                    Esperando texto...
+                </div>
+
+            </div>
+        </div>
+        <div class="text-center mt-4"> 
+            <button type="button" id="btnLimpiar" class="btn btn-primary">
+                 Limpiar 
+            </button>
+        </div>
+
+
+        <footer class="text-center text-muted mt-5">
+            ISEL METZÍ CARRILLO MEJÍA CM240437
+            Trabajo de investigación aplicada.
+            Lenguajes interpretados en el Cliente.            
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript de las expresiones regulares -->
+    <script src="regex.js" ></script>
+
+</body>
+</html>
